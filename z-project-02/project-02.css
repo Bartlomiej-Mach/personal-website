@@ -450,6 +450,7 @@ By using it we can save more time and our code looks more clear.
   position: absolute;
   font-family: "Spartan", sans-serif;
   font-size: 50px;
+  text-align: center;
 }
 
 @media (max-width: 450px) {
