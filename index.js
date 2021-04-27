@@ -585,3 +585,48 @@ const animationPageChange = () => {
 btnReadMore.addEventListener('click', animationPageChange);
 btnProject1.addEventListener('click', animationPageChange);
 btnProject2.addEventListener('click', animationPageChange);
+
+
+
+
+/* 
+#####################################
+######AAAA#################AAAA######
+#####AmmmmAA#############AAmmmmA#####
+###AAmmmmmmmAAA#######AAAmmmmmmmAA###
+##AmmmmmmmmmmmmAA###AAmmmmmmmmmmmmA##
+##AmmmmmmBBBmmmmmAAAmmmmmBBBmmmmmmA##
+##AmmmmmmA##BBBmmmmmmmBBB##BmmmmmmA##
+##AmmmmmmA#####BBmmmBB#####BmmmmmmA##
+##AmmmmmmA#######BBB#######BmmmmmmA##
+##AmmmmmmA#################BmmmmmmA##
+##AmmmmmmA#################BmmmmmmA##
+##AmmmmmmA#################BmmmmmmA##
+##AmmmmmmA#################BmmmmmmA##
+##AmmmmAAA#################BBBmmmmA##
+##AmAAA#######################BBBmR##
+##AA#############################BR##
+#####################################
+
+*/
+console.log('Designed and developed by Bartlomiej Mach');
+console.log('#########################################');
+console.log('#########################################');
+console.log('########AAAA#################AAAA########');
+console.log('#######AmmmmmAA#############AAmmmmA######');
+console.log('#####AAmmmmmmmAAA#######AAAmmmmmmmAA#####');
+console.log('####AmmmmmmmmmmmmAA###AAmmmmmmmmmmmmA####');
+console.log('####AmmmmmmBBBmmmmmAAAmmmmmBBBmmmmmmA####');
+console.log('####AmmmmmmA##BBBmmmmmmmBBB##BmmmmmmA####');
+console.log('####AmmmmmmA#####BBmmmBB#####BmmmmmmA####');
+console.log('####AmmmmmmA#######BBB#######BmmmmmmA####');
+console.log('####AmmmmmmA#################BmmmmmmA####');
+console.log('####AmmmmmmA#################BmmmmmmA####');
+console.log('####AmmmmmmA#################BmmmmmmA####');
+console.log('####AmmmmmmA#################BmmmmmmA####');
+console.log('####AmmmmAAA#################BBBmmmmA####');
+console.log('####AmAAA#######################BBBmR####');
+console.log('####AA#############################AA####');
+console.log('#########################################');
+
+

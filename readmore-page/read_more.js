@@ -35,3 +35,25 @@ const aniamtion1 = () => {
 button1.addEventListener('click', aniamtion1);
 button2.addEventListener('click', aniamtion1);
 button3.addEventListener('click', aniamtion1);
+
+
+
+console.log('Designed and developed by Bartlomiej Mach');
+console.log('#########################################');
+console.log('#########################################');
+console.log('########AAAA#################AAAA########');
+console.log('#######AmmmmmAA#############AAmmmmA######');
+console.log('#####AAmmmmmmmAAA#######AAAmmmmmmmAA#####');
+console.log('####AmmmmmmmmmmmmAA###AAmmmmmmmmmmmmA####');
+console.log('####AmmmmmmBBBmmmmmAAAmmmmmBBBmmmmmmA####');
+console.log('####AmmmmmmA##BBBmmmmmmmBBB##BmmmmmmA####');
+console.log('####AmmmmmmA#####BBmmmBB#####BmmmmmmA####');
+console.log('####AmmmmmmA#######BBB#######BmmmmmmA####');
+console.log('####AmmmmmmA#################BmmmmmmA####');
+console.log('####AmmmmmmA#################BmmmmmmA####');
+console.log('####AmmmmmmA#################BmmmmmmA####');
+console.log('####AmmmmmmA#################BmmmmmmA####');
+console.log('####AmmmmAAA#################BBBmmmmA####');
+console.log('####AmAAA#######################BBBmR####');
+console.log('####AA#############################AA####');
+console.log('#########################################');
