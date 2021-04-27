@@ -595,7 +595,6 @@ TweenMax.from(
 );
 
 
-
 console.log('Designed and developed by Bartlomiej Mach');
 console.log('#########################################');
 console.log('#########################################');
