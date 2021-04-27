@@ -1,0 +1,70 @@
+.main-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 1000px;
+    @include bigscreen() {
+        width: 1920px;
+    }
+    @include verysmall() {
+        height: 100vh;
+    }
+    .bg-img {
+        overflow: hidden;
+        @include center();
+        width: 100%;
+        position: relative;
+        &::before {
+            width: 100%;
+            height: 100%;
+            background: black;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: .9;
+        }
+        .project-name {
+            z-index: 10;
+            color: white;
+            position: absolute;
+            font-family: $p-name-font;
+            font-size: 50px;
+            @include verysmall() {
+                font-size: 40px;
+                transform: translateY(-100px);
+            }
+        }
+        .arrow-down {
+            color: white;
+            position: absolute;
+            font-family: $header-font;
+            font-size: 11px;
+            bottom: 50px;
+            transition: 0.2s;
+            @include center();
+            &::before {
+                width: 1px;
+                content: '';
+                position: absolute;
+                height: 50px;
+                background: white;
+                bottom: -60px;
+            }
+            &:hover {
+                color: #AF5252;
+            }
+        }
+        .project-description {
+            z-index: 10;
+            color: white;
+            position: absolute;
+            transform: translateY(50px);
+            font-family: $p-coment-font;
+            @include verysmall() {
+                font-size: 15px;
+                transform: translateY(-50px);
+            }
+        }
+    }
+}

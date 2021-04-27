@@ -1,0 +1,44 @@
+.author-description {
+    width: 100%;
+    padding: 60px 0 0 0;
+    @include center-column();
+    @include bigscreen() {
+        width: 1920px;
+    }
+    .section-name {
+        font-family: $about-font;
+        text-transform: uppercase;
+        font-size: 13px;
+        color: #AF5252;
+        font-weight: bold;
+    }
+    .info-box {
+        width: 100%;
+        padding: 0 10%;
+        margin-top: 100px;
+        .info-intro {
+            font-family: $p-name-font;
+            font-size: 30px;
+            @include verysmall() {
+                font-size: 25px;
+            }
+        }
+        .info-content {
+            margin-top: 50px;
+            width: 44%;
+            font-size: 20px;
+            font-family: $read-me-font;
+            @include phone() {
+                width: 60%;
+            }
+            @include verysmall() {
+                width: 80%;
+                font-size: 15px;
+            }
+            .color-blue {
+                color: #EEC290;
+            }
+        }
+        
+    }
+}

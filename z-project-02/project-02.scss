@@ -1,0 +1,60 @@
+/* 
+Imported folders from main folder to get css styles from every one sections of  scss.
+*/
+
+// @import "./respond-variables/respond";
+@import "../variables/variables";
+@import "../respond-variables/respond";
+@import "./animation-in-out/animation-in-out";
+@import "../readmore-page/navigation/navigation";
+@import "./main/main";
+@import "./project-description/project-description";
+@import "./author-description/author-description";
+@import "./color-section/color-section";
+@import "./design-section/design-section";
+@import "../readmore-page/button-section/button-section";
+@import "../footer/footer";
+
+
+
+/* 
+Main things about box-sizezing, body and html + <a> specification for all website.
+*/
+
+body::-webkit-scrollbar {
+    width: 10px;
+    height: 100px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom,#c22085 25%,#2d9687 0,#2d9687 50%,#e9b171 0,#e9b171 75%,#e2b8aa 0);
+    border-radius: 5px; 
+  }
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #201D1D;
+    @include center-column();
+    position: relative;
+    
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}

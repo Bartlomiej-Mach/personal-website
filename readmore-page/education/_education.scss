@@ -1,0 +1,45 @@
+.education {
+    width: 100%;
+    @include center-top();
+    margin-top: 130px;
+    @include bigscreen() {
+        width: 1920px;
+    }
+    &__container {
+        width: 80%;
+        position: relative;
+        padding-bottom: 50px;
+        &::before {
+            width: 100%;
+            height: 2px;
+            background: $linear;
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .section-name {
+            font-family: $read-me-font;
+            font-size: 25px;
+            margin-bottom: 60px;
+        }
+        .education-floor {
+            width: 100%;
+            position: relative;
+            margin-bottom: 60px;
+            .school-name {
+                font-family: $read-me-font;
+                font-size: 20px;
+                color: $f_color;
+            }
+            .school-location {
+                font-family: $read-me-font;
+                font-size: 20px;
+                color: $p_color;
+                .color-white {
+                    color: $f_color;
+                }
+            }
+        }
+    }
+}

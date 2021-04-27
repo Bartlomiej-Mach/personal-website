@@ -1,0 +1,37 @@
+.a-intro {
+    width: 100%;
+    min-height: 1000px;
+    @include center-top();
+    overflow: hidden;
+    .animation-intro-box {
+        z-index: -1;
+        width: 100%;
+        @include center-top();
+        position: relative;
+        .animated-words {
+            width: 100%;
+            font-family: $p-name-font;
+            text-transform: uppercase;
+            position: absolute;
+            text-align: center;
+            transform: translateY(200px) translateX(-1200px);
+            font-size: 200px;
+            opacity: 0;
+            
+        }
+        .animated-words2 {
+            width: 100%;
+            font-family: $p-name-font;
+            text-transform: uppercase;
+            position: absolute;
+            text-align: center;
+            transform: translateY(280px) translateX(0px);
+            font-size: 200px;
+            opacity: 0;
+            i{
+                color: $p_color;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,393 @@
+.projects-section {
+    width: 100%;
+    @include center-top-column();
+    @include bigscreen() {
+        width: 1920px;
+    }
+    .section-name {
+        width: 100%;
+        @include center();
+        
+        .s-name {
+            font-family: $header-font;
+            font-size: 28px;
+        }
+    }
+
+
+    .project-container {
+        width: 100%;
+        margin-top: 170px;
+        @include center-top-column();
+        @include smaller-than-480 {
+            margin-top: 150px;
+        }
+
+        .floor1 {
+            .project-wrapper{
+                &::before {
+                    transform: translateX(110%);
+                    
+                }
+                .p-span {
+                    top: 0;
+                    right: 0;
+                }
+                .number-project {
+                    right: 30px;
+                    top: 30px;
+                    @include phone {
+                        right: 20px; 
+                        top: 20px;
+                               
+                    }
+                    @include smaller-than-425 {
+                        right: 10px;
+                        top: 5px
+
+                    }
+                }
+                .project-name {
+                    left: 100px;
+                    @include tabPort {
+                        left: 50px;
+                               
+                    }
+                    @include phone {
+                        left: 40px;
+                    }
+                    @include smaller-than-425 {
+                        left: 15px;
+                    }
+                    
+                }
+                .p-coment {
+                    left: 100px;
+                    @include tabPort {
+                        left: 50px;
+                               
+                    }
+                    @include phone {
+                        left: 40px;
+                    }
+                    @include smaller-than-425 {
+                        left: 15px;
+                    }
+                    
+                }
+                .project-btn {
+                    left: 100px;
+                    @include tabPort {
+                        left: 50px;
+                               
+                    }
+                    @include phone {
+                        left: 40px;
+                    }
+                    @include smaller-than-425 {
+                        left: 15px;
+                    }
+                
+                }
+                
+            }
+        }
+        .floor2 {
+            .project-wrapper{
+                &::before {
+                    transform: translateX(-110%);
+                }
+                .p-span {
+                    top: 0;
+                    left: 0;
+                }
+                .number-project {
+                    left: 30px;
+                    top: 30px;
+                    @include phone {
+                        left: 20px; 
+                        top: 20px;
+                               
+                    }
+                    @include smaller-than-425 {
+                        left: 10px;
+                        top: 5px
+                    }
+                    
+                }
+                .project-name {
+                    right: 100px;
+                    @include tabPort {
+                        right: 50px;
+                               
+                    }
+                    @include phone {
+                        right: 40px;
+                    }
+                    @include smaller-than-425 {
+                        right: 15px;
+                    }
+                    
+                }
+                .p-coment {
+                    right: 100px;
+                    @include tabPort {
+                        right: 50px;
+                               
+                    }
+                    @include phone {
+                        right: 40px;
+                    }
+                    @include smaller-than-425 {
+                        right: 15px;
+                    }
+                    
+                }
+                .project-btn {
+                    right: 100px;
+                    @include tabPort {
+                        right: 50px;
+                               
+                    }
+                    @include phone {
+                        right: 40px;
+                    }
+                    @include smaller-than-425 {
+                        right: 15px;
+                    }
+                
+                }
+            }
+        }
+
+        &--floor {
+            width: 100%; 
+            margin-bottom: 140px;
+            position: relative;
+            @include smaller-than-480 {
+                margin-bottom: 100px;
+            }
+            
+            
+            &:nth-child(1) {
+                @include center-right();
+                padding-right: 6%;
+                @include smaller-than-960 {
+                    font-size: 25px;
+                }
+                @include tabPort {
+                        padding-right: 0;
+                        @include center();
+                }
+            }
+            &:nth-child(2) {
+                @include center-left();
+                padding-left: 6%;
+                @include tabPort {
+                    padding-left: 0;
+                    @include center();
+                }
+            }
+
+            .project-wrapper {
+                overflow: hidden;
+                width: 70%;
+                @include center();
+                --webkit-box-shadow: 0px 10px 36px 0px rgba(255,255,255,0.23);
+                -moz-box-shadow: 0px 10px 36px 0px rgba(255,255,255,0.23);
+                box-shadow: 0px 10px 36px 0px rgba(255,255,255,0.23);
+                position: relative;
+
+                @include smaller-than-960 {
+                    width: 90%;
+                }
+                @include smaller-than-425 {
+                    height: 230px;
+                }
+
+                &::before {
+                    content: '';
+                    width: 110%;
+                    height: 100%;
+                    position: absolute;
+                    background: linear-gradient(90deg, #2F0739 -23.1%, rgba(255, 255, 255, 0) 109.27%), rgba(172, 41, 194, 0.6);
+                    // top: 0;
+                    // right: 0;
+                    transition: 0.4s;
+                    
+                }
+
+                &:hover::before {
+                    transform: translateX(0%);
+                }
+                &:hover .project-name {
+                    font-size: 33px;
+                    @include phone {
+                        font-size: 28px;
+                    }
+                    @include smaller-than-480 {
+                        font-size: 23px;
+                    }
+                }
+                &:hover .p-coment {
+                    font-size: 20px;
+                    @include phone {
+                        font-size: 17px;
+                    }
+                    @include smaller-than-480 {
+                        font-size: 15px;
+                    }
+                    @include smaller-than-350 {
+                        font-size: 13px;  
+                    }
+                }
+                &:hover .number-project {
+                    transition-delay: 0.5s;
+                    opacity: 1;
+                    color: white;
+                    transform: translateY(0);
+                    
+                }
+                
+                .p-span {
+                    width: 110%;
+                    height: 100%;
+                    background: linear-gradient(to left, #53175c 17.47%, rgba(255, 255, 255, 0) 149.74%), #ae79b8;
+                    display: inline-block;
+                    position: absolute;
+                    
+                    z-index: 2;
+                }
+                .number-project {
+                    position: absolute;
+                    z-index: 1;
+                    top: 30px;
+                    right: 30px;
+                    font-family: $p-name-font;
+                    font-weight: bold;
+                    font-size: 130px;
+                    color: #A3A19D;
+                    opacity: 0;
+                    display: inline-block;
+                    transition: 0.4s;
+                    transform: translateY(-10px);
+                    @include smaller-than-960 {
+                        font-size: 80px;
+                    }
+                    @include phone {
+                        font-size: 60px;
+                    }
+                    
+                }
+                .dark-bg {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0, 0, 0, 0.8);
+                }
+                .project-img {
+                    width: 100%;
+                    @include smaller-than-425 {
+                        height: 230px;
+                    }
+                }
+                .project-name {
+                    position: absolute;
+                    
+                    font-family: $p-name-font;
+                    font-weight: bold;
+                    font-size: 30px;
+                    z-index: 1;
+                    transition: 0.4s;
+                    @include smaller-than-960 {
+                        font-size: 25px;
+                    }
+                    @include phone {
+                        top: 70px;      
+                        font-size: 22px;      
+                    }
+                    @include smaller-than-350 {
+                        top: 90px; 
+                    }
+                }
+                .p-coment {
+                    font-family: $p-coment-font;
+                    
+                    position: absolute;
+                    z-index: 1;
+                    transform: translateY(30px);
+                    transition: 0.4s;
+                    @include smaller-than-960 {
+                        font-size: 16px;
+                    }
+                    @include phone {
+                        transform: translateY(25px);
+                        top: 75px;
+                        font-size: 14px;
+                    }
+                    @include smaller-than-425 {
+                        text-align: right;
+                    }
+                    @include smaller-than-350 {
+                        top: 90px; 
+                        font-size: 12px;
+                    }
+                    
+                }
+                .project-btn {
+                    z-index: 1;
+                    position: absolute;                  
+                    width: 130px;
+                    height: 40px;
+                    background: #CB2F2F;
+                    font-family: $p-name-font;
+                    font-size: 16px;
+                    @include center();
+                    transform: translateY(90px);
+                    transition: 0.4s;
+                    overflow: hidden;
+                    @include phone {
+                        width: 100px;
+                        height: 35px;
+                        font-size: 14px;
+                        top: 60px;
+                    }
+                    @include smaller-than-480 {
+                        width: 80px;
+                        height: 30px;
+                        font-size: 12px;
+                    }
+                    @include smaller-than-425 {
+                        top: 50px;
+                    }
+                    @include smaller-than-350 {
+                        top: 60px; 
+                        
+                    }
+
+                    &::before {
+                        content: '';
+                        z-index: -1;
+                        width: 400%;
+                        height: 40px;
+                        background: linear-gradient(to right,#c22085 25%,#2d9687 0,#2d9687 50%,#e9b171 0,#e9b171 75%,#e2b8aa 0);
+                        transform: translateX(-105%);
+                        position: absolute;
+                        left: 0;
+                        transition: 0.7s;
+                        background-size: 100% 100%;
+                        
+                    }
+                    &:hover::before {
+                        transform: translateX(0px);
+                    }
+                }
+                
+                
+            }
+        }
+
+    }
+}

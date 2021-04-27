@@ -1,0 +1,69 @@
+.button-section {
+    width: 100%;
+    background: #464545;
+    position: relative;
+    @include bigscreen() {
+        width: 1920px;
+    }
+    .small-leters {
+        color: #AF5252;
+        font-size: 16px;
+        font-family: $about-font;
+        margin: 20px 0 0 10%;
+        position: absolute;
+        z-index: 10;
+        color: white;
+        @include verysmall() {
+            font-size: 13px;
+        }
+    }
+    .back-button {
+        display: block;
+        @include center-left();
+        height: 150px;
+        width: 100%;
+        padding-left: 10%;
+        z-index: 1;
+        font-family: $p-name-font;
+        font-size: 30px;
+        position: relative;
+        overflow: hidden;
+        @include verysmall() {
+         
+            font-size: 25px;
+        }
+        &::before {
+            width: 110%;
+            height: 150px;
+            background: #B0D031;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -120%;
+            transition: 0.4s;
+            z-index: -2;
+            transform: rotate(0.5deg);
+        }
+        &::after {
+            width: 110%;
+            height: 150px;
+            background: $p_color;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -120%;
+            transition: 0.4s;
+            z-index: -1;
+            transform: rotate(0.5deg);
+            transition-delay: .15s;
+        }
+    }
+    .back-button:hover::after {
+        top: 0;
+        transform: rotate(0deg);
+    }
+    .back-button:hover::before {
+        top: 0;
+        transform: rotate(0deg);
+    }
+}

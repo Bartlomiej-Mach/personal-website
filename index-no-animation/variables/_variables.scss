@@ -1,0 +1,136 @@
+/* 
+This file is created for store variables
+we can see here types of
+- colors
+- fonts
+- font sizes
+- Mixin funciots
+
+It is realy helpfull to save time and count of code
+
+*/
+
+//COLORS
+$p_color: #AC29C2;  
+$s_color: #29C266;
+$t_color: #DFAD2E;
+$q_color: #201D1D;
+$f_color: #C7C6C6;
+$linear: linear-gradient(to right, $q_color, $p_color);
+
+//fonts
+$header-font: 'Varela Round', sans-serif;
+$second-font: 'Quicksand', sans-serif;
+$q-fonts: 'Sansita Swashed', cursive;
+$p-name-font: 'Spartan', sans-serif;
+$p-coment-font: 'Tinos', serif;
+$nav-font: 'Scada', sans-serif;
+$aa-font: 'Dela Gothic One', cursive;
+$about-font: 'Trirong', serif;
+$read-me-font: 'Questrial', sans-serif;
+
+//Font-size
+$h1-size: 52px;
+$h2-size: 24px;
+$h3-size: 63px;
+
+//FUNCTIONS
+
+/* 
+
+Function 1
+Center all obiets and adding column look
+
+*/
+@mixin center-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* 
+
+Function 2
+Center all obiets 
+
+*/
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* 
+
+Function 3
+Center all obiets and adding column look
+starting at top of obiects
+
+*/
+@mixin center-top-column {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+/* 
+
+Function 4
+Center all obiets and add responsive space between children obiects
+
+*/
+@mixin center-space {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* 
+
+Function 5
+Center all obiets and starting from LEFT side of obiect
+
+*/
+
+@mixin center-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* 
+
+Function 6
+Center all obiets and starting from RIGHT side of obiect
+
+*/
+@mixin center-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* 
+
+Function 7
+Center all obiets and starting from top side of obiect
+
+*/
+@mixin center-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+/* 
+
+Function 8
+Center all obiets and add responsive space around all children obiects
+
+*/
+@mixin center-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+

@@ -1,0 +1,84 @@
+.project-description-section {
+    width: 100%;
+    padding: 70px 0 70px 0;
+    background: #272626;
+    @include center-column();
+    @include bigscreen() {
+        width: 1920px;
+    }
+    .project-second-name {
+        font-family: $p-name-font;
+        font-size: 30px;
+        @include verysmall() {
+            font-size: 25px;
+        }
+    }
+    .description-content {
+        width: 50%;
+        margin: 30px;
+        font-family: $read-me-font;
+        font-size: 20px;
+        text-align: center;
+        @include phone() {
+            width: 80%;
+        }
+        @include verysmall() {
+            font-size: 15px;
+        }
+    }
+    .button-box {
+        width: 100%;
+        @include center();
+        &--item {
+            @include center();
+            width: 180px;
+            height: 50px;
+            background: #EEC290;
+            margin: 0 25px;
+            font-family: $p-name-font;
+            font-size: 13px;
+            position: relative;
+            overflow: hidden;
+            @include verysmall() {
+                width: 130px;
+                height: 40px;
+                font-size: 10px;
+            }
+
+            &::before {
+                position: absolute;
+                content: '';
+                height: 50px;
+                width: 110%;
+                top: -110%;
+                transform: rotate(-2deg);
+                left: 0;
+                background: #F9F2E7;
+                transition: 0.3s;
+                z-index: -1;
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                height: 50px;
+                width: 110%;
+                top: -110%;
+                transform: rotate(-2deg);
+                left: 0;
+                background: #FF003C;
+                transition: 0.3s;
+                transition-delay: 0.2s;
+                z-index: -1;
+            }
+            &:hover::before {
+                top: 0;
+                transform: rotate(0deg);
+            }
+            &:hover::after {
+                top: 0;
+                transform: rotate(0deg);
+            }
+        }
+        
+    }
+}

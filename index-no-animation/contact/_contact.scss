@@ -1,0 +1,212 @@
+.contact-section {
+    width: 100%;
+    height: 1200px;
+    @include center-top-column();
+    padding-top: 300px;
+    overflow: hidden;
+    @include bigscreen() {
+        width: 1920px;
+    }
+    @include smaller-than-425 {
+        height: 600px;
+        padding-top: 100px;
+    }
+    .enter-animation {
+        width: 17px;
+        height: 17px;
+        border: 2px solid #33FF00;
+        border-radius: 100px;
+        @include center();
+        position: relative;
+        @include phone {
+            display: none;
+        }
+        .line-in-1 {
+            width: 3px;
+            height: 300px;
+            transform: translateY(5px);
+            background: white;
+            transform-origin: top center;
+            position: absolute;
+            top: 0;
+            @include phone {
+                display: none;
+            }
+        }
+    }
+    .section-name {
+        position: relative;
+        transform: translateY(100px);
+        .intro-name {
+            font-size: 90px;
+            font-family: $aa-font;
+            padding: 0;
+            margin: 0;
+            background: $q_color;
+            color: rgba($color: #827E7E, $alpha: 0.15);
+            @include tabPort {
+                font-size: 80px;
+            }
+            @include smaller-than-425 {
+                font-size: 50px;
+            }
+            @include smaller-than-350 {
+                font-size: 40px;
+            }
+            
+            
+        }
+
+    }
+    .line-in-2 {
+        width: 57%;
+        height: 3px;
+        background: white;
+        position: absolute;
+        transform: translateY(305px);
+        z-index: 1;
+        @include phone {
+            display: none;
+        }
+    }
+    .icon-container {
+        width: 60%;
+        @include center-space();
+        z-index: 1;
+        font-size: 60px;
+        transform: translateY(105px);
+        @include tabPort {
+            font-size: 40px;
+            transform: translateY(130px);
+        }
+        @include phone {
+            width: 90%;
+        }
+        @include smaller-than-350 {
+            width: 100%;
+            font-size: 30px;
+        }
+        
+        .icon-action {
+            .ca {
+                padding: 20px;
+                background: $q_color;   
+                position: relative;
+                overflow: hidden;
+                
+            }
+            &:nth-child(1) {
+                @include center();
+                
+                &::before {
+                    position: absolute;
+                    content: 'GitHub';
+                    font-family: $p-name-font;
+                    font-size: 13px;
+                    bottom: 0;
+                    transform: translateY(20px);
+                    z-index: 1;
+                    opacity: 0;
+                    transition: 0.4s;
+                    @include smaller-than-350 {
+                        font-size: 10px;
+                    }
+                }
+
+                &:hover::before {
+                    transform: translateY(5px);
+                    opacity: 1;
+                }
+            }
+            &:nth-child(2) {
+                @include center();
+                
+                &::before {
+                    position: absolute;
+                    content: 'E-mail';
+                    font-family: $p-name-font;
+                    font-size: 13px;
+                    bottom: 0;
+                    transform: translateY(20px);
+                    z-index: 1;
+                    opacity: 0;
+                    transition: 0.4s;
+                    @include smaller-than-350 {
+                        font-size: 10px;
+                    }
+                }
+
+                &:hover::before {
+                    transform: translateY(5px);
+                    opacity: 1;
+                }
+            }
+            &:nth-child(3) {
+                @include center();
+                
+                &::before {
+                    position: absolute;
+                    content: 'FaceBook';
+                    font-family: $p-name-font;
+                    font-size: 13px;
+                    bottom: 0;
+                    transform: translateY(20px);
+                    z-index: 1;
+                    opacity: 0;
+                    transition: 0.4s;
+                    @include smaller-than-350 {
+                        font-size: 10px;
+                    }
+                }
+
+                &:hover::before {
+                    transform: translateY(5px);
+                    opacity: 1;
+                }
+            }
+            &:nth-child(4) {
+                @include center();
+                
+                &::before {
+                    position: absolute;
+                    content: 'Linked';
+                    font-family: $p-name-font;
+                    font-size: 13px;
+                    bottom: 0;
+                    transform: translateY(20px);
+                    z-index: 1;
+                    opacity: 0;
+                    transition: 0.4s;
+                    @include smaller-than-350 {
+                        font-size: 10px;
+                    }
+                }
+
+                &:hover::before {
+                    transform: translateY(5px);
+                    opacity: 1;
+                }
+            }
+            
+        }
+        
+    }
+    .e-mail1-box {
+        width: 100%;
+        text-align: center;
+        font-family: $p-name-font;
+        transform: translateY(150px);
+        @include smaller-than-350 {
+            font-size: 11px;
+        }
+        .mail-adres {
+            margin: 7px;
+            color: #2E2C2D;
+            transition: 0.4s;
+            &:hover {
+                color: white;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,64 @@
+.skills {
+    width: 100%;
+    @include center-top();
+    margin: 80px 0 130px 0;
+    @include bigscreen() {
+        width: 1920px;
+    }
+    &__container {
+        width: 80%;
+        position: relative;
+        padding-bottom: 50px;
+
+        .section-name {
+            font-family: $read-me-font;
+            font-size: 25px;
+            margin-bottom: 60px;
+        }
+        .skill-floor {
+            width: 100%;
+            position: relative;
+            margin-bottom: 60px;
+            display: flex;
+            @include tabPort() {
+                @include center-column();
+            }
+
+            .left-box {
+                width: 20%;
+                @include tabPort() {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                .skill-name {
+                    font-family: $read-me-font;
+                    font-size: 20px;
+                    color: $f_color;
+                    position: relative;
+                    
+                    &::before {
+                        width: 110%;
+                        height: 15px;
+                        top: -3px;
+                        background: $p_color;
+                        content: '';
+                        position: absolute;
+                        z-index: -1;
+                    }
+                }
+            }
+            .right-box {
+                width: 80%;
+                @include tabPort() {
+                    width: 100%;
+                }
+                .skill-description {
+                    font-family: $read-me-font;
+                    font-size: 20px;
+                    color: $f_color;
+                }
+            }
+            
+        }
+    }
+}

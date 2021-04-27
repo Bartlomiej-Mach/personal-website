@@ -1,0 +1,150 @@
+/* 
+This file is created for store variables need to do responsive page
+This is realy confortable way to do easy RWD styles.
+We can use it in others files like _info-section.scss
+
+to use it we need to write this part of code:
+
+ @include laptop {
+     ...code...
+}
+
+By using it we can save more time and our code looks more clear.
+
+*/
+
+// VARIABLES //
+$phone-w: 650px;
+$tabPort-w: 770px;
+$tabLand-w: 1150px;
+$laptop-w: 1740px;
+$bigScreen-w: 1921px;
+$verySmall-w: 450px;
+$smaller-than-1920: 1920px;
+$smaller-than-1480: 1480px;
+$smaller-than-1300: 1300px;
+$smaller-than-1050: 1050px;
+$smaller-than-960: 960px;
+$smaller-than-880: 880px;
+$smaller-than-425: 425px;
+$smaller-than-480: 480px;
+$smaller-than-350: 350px;
+$half-w: 1550px;
+
+
+// --------------- // 
+//phone
+@mixin phone {
+    @media (max-width: #{$phone-w}) {
+        @content;
+    }
+}
+//smaller than 1920px
+@mixin smaller-than-480 {
+    @media (max-width: #{$smaller-than-480}) {
+        @content;
+    }
+}
+@mixin smaller-than-350 {
+    @media (max-width: #{$smaller-than-350}) {
+        @content;
+    }
+}
+@mixin smaller-than-1920 {
+    @media (max-width: #{$smaller-than-1920}) {
+        @content;
+    }
+}
+
+//smaller than 1480px
+@mixin smaller-than-1480 {
+    @media (max-width: #{$smaller-than-1480}) {
+        @content;
+    }
+}
+//smaller than 1300px
+@mixin smaller-than-1300 {
+    @media (max-width: #{$smaller-than-1300}) {
+        @content;
+    }
+}
+//smaller than 1050px
+@mixin smaller-than-1050 {
+    @media (max-width: #{$smaller-than-1050}) {
+        @content;
+    }
+}
+//smaller than 960px
+@mixin smaller-than-960 {
+    @media (max-width: #{$smaller-than-960}) {
+        @content;
+    }
+}
+
+//smaller than 880px
+@mixin smaller-than-880 {
+    @media (max-width: #{$smaller-than-880}) {
+        @content;
+    }
+}
+
+//smaller than 425px
+@mixin smaller-than-425 {
+    @media (max-width: #{$smaller-than-425}) {
+        @content;
+    }
+}
+
+
+//tab port
+@mixin tabPort {
+    @media (max-width: #{$tabPort-w}) {
+        @content;
+    }
+}
+
+//tab land
+@mixin tabLand {
+    @media (max-width: #{$tabLand-w}) {
+        @content;
+    }
+}
+
+//laptop
+@mixin laptop {
+    @media (max-width: #{$laptop-w}) {
+        @content;
+    }
+}
+
+//bigscreen
+@mixin bigscreen {
+    @media (min-width: #{$bigScreen-w}) {
+        @content;
+    }
+}
+
+@mixin halfscreen {
+    @media (max-width: #{$half-w}) {
+        @content;
+    }
+}
+
+@mixin verysmall {
+    @media (max-width: #{$verySmall-w}) {
+        @content;
+    }
+}
+
+
+/* 
+//respond
+@include phone {}
+@include tabPort {}
+@include tabLand {}
+@include laptop {}
+@include bigscreen {}
+@include halfscreen {}
+@include verysmall {}
+//
+*/

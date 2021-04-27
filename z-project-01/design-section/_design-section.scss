@@ -1,0 +1,28 @@
+.design-section {
+    width: 100%;
+    @include center-column();
+    padding: 70px 0 100px 0;
+    overflow: hidden;
+    @include bigscreen() {
+        width: 1920px;
+    }
+    @include verysmall() {
+        padding: 40px 0 50px 0;
+        font-size: 25px;
+    }
+    .design-section-name {
+        font-family: $p-name-font;
+        font-size: 30px;
+        @include verysmall() {
+            font-size: 25px;
+        }
+    }
+    .design-img-box {
+        margin-top: 100px;
+        width: 90%;
+        @include center();
+        .design-img {
+            width: 100%;
+        }
+    }
+}

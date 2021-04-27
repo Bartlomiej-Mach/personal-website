@@ -1,0 +1,142 @@
+///// FIRST
+.quotation-section {
+    width: 100%;
+    height: 1400px;
+    @include center();
+    z-index: -1;
+    overflow: hidden;
+    position: relative;
+    @include bigscreen() {
+        width: 1920px;
+    }
+    @include smaller-than-425 {
+        height: 1000px;
+    }
+    .design-line {
+        width: 3px;
+        height: 60%;
+        position: absolute;
+        
+        &:nth-child(1) {
+           left: 2%; 
+           background: linear-gradient(to bottom, $q_color, $p_color );
+           
+        }
+        &:nth-child(2) {
+            right: 2%;
+            background: linear-gradient(to top, $q_color, $p_color );
+            
+        }
+    }
+
+
+    .figure-box {
+        width: 50%;
+        @include center();
+        position: relative;
+        @include phone {
+            transform: scale(0.7);
+            width: 60%;
+        }
+        @include smaller-than-425 {
+            width: 100%;
+            transform: scale(0.5);
+        }
+        .out-box {
+            width: 350px;
+            height: 350px;
+            background: $q-color;
+            position: absolute;
+            bottom: 0;
+            border-radius: 10px;
+            
+        }
+        .quotation-content {
+            
+            @include center();
+            position: absolute;
+            background: $q_color;
+            font-family: $q-fonts;
+            height: 50px;
+        }
+        .q-c1 {
+            transform: translateX(20px) translateY(-30px);
+            
+        }
+        .q-c2 {
+            transform: translateX(-20px) translateY(10px);
+            
+        }
+    }
+}
+
+
+//// SECOND
+.quotation-section2 {
+    width: 100%;
+    @include center();
+    height: 1800px;
+    z-index: -1;
+    overflow: hidden;
+    @include bigscreen() {
+        width: 1920px;
+    }
+    @include smaller-than-425 {
+        height: 1400px;
+    }
+    .design-line {
+        width: 3px;
+        height: 60%;
+        position: absolute;
+        
+        &:nth-child(1) {
+           left: 2%; 
+           background: linear-gradient(to top, $q_color, #C2A969 );
+           
+        }
+        &:nth-child(2) {
+            right: 2%;
+            background: linear-gradient(to bottom, $q_color, #C2A969 );
+            
+        }
+    }
+
+    .figure-box {
+        width: 50%;
+        @include center();
+        position: relative;
+        @include phone {
+            transform: scale(0.7);
+            width: 60%;
+        }
+        @include smaller-than-425 {
+            width: 100%;
+            transform: scale(0.5);
+        }
+        .out-box-2 {
+            width: 500px ;
+            height: 500px;
+            background: $q-color;
+            position: absolute;
+            bottom: 0;
+            border-radius: 300px;
+        
+        }
+        .quotation-content {
+            
+            @include center();
+            position: absolute;
+            background: $q_color;
+            font-family: $q-fonts;
+            height: 50px;
+            
+        }
+        .q-c1-1 {
+            transform: translateX(20px) translateY(-80px);
+        }
+        .q-c2-2 {
+            transform: translateX(-20px) translateY(80px);
+        }
+    }
+}
+

@@ -1,0 +1,40 @@
+.work-experience {
+    width: 100%;
+    @include center-top();
+    @include bigscreen() {
+        width: 1920px;
+    }
+    &__container {
+        width: 80%;
+        position: relative;
+        .section-name {
+            font-family: $read-me-font;
+            font-size: 25px;
+            margin-bottom: 60px;
+        }
+        .work-floor {
+            width: 100%;
+            position: relative;
+            margin-bottom: 60px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .work-name {
+                font-family: $read-me-font;
+                font-size: 20px;
+            }
+            .work-location {
+                font-family: $read-me-font;
+                font-size: 20px;
+                color: $p_color;
+            }
+            .work-description {
+                margin-top: 20px;
+                font-family: $read-me-font;
+                font-size: 20px;
+                color: $f_color;
+            }
+        }
+    }
+    
+}
